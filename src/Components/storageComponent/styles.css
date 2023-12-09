@@ -1,0 +1,14 @@
+.storageComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: 3rem auto;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
