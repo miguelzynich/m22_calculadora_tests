@@ -6,6 +6,7 @@ import SecondCurrency from '../secondCurrency/SecondCurrency'
 import StorageContext from '../../StorageContext'
 import StorageComponent from '../storageComponent/StorageComponent'
 
+
 interface CurrencyApi {
   rates: Record<string, number>
 }
