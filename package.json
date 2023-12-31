@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "webpack",
     "test": "jest",
+    "clear_jest": "jest --clearCache",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

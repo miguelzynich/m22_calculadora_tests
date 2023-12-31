@@ -47,7 +47,7 @@ const MainComponent: React.FC = () => {
 				<ConversionContext>
 					<SecondCurrency setSecondCurrencyValue={setSecondCurrencyValue} currency={currency} currencyRate={currencyRate} />
 				</ConversionContext>
-				<button onClick={handleClick}>Converter</button>
+				<button onClick={handleClick}>Conversor</button>
 				<p>{finalValue === 0? null : finalValue}</p>
 			</div>
 			<StorageContext>

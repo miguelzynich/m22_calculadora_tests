@@ -35,7 +35,7 @@ const FirstCurrency: React.FC<FirstProps> = ({ currency, currencyRate, setFirstC
         aria-label="Insira o valor"
       />
       <label htmlFor="currencySelect">Converter de</label>
-      <select id="currencySelect" onChange={handleChange} aria-label="Selecione a moeda">
+      <select data-testid="currencyid1" id="currencySelect" onChange={handleChange} aria-label="Selecione a moeda">
         {currency.map((currency, index) => (
           <option key={index} value={currencyRate[index].toString()}>
             {currency}

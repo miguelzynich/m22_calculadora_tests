@@ -27,7 +27,7 @@ const SecondCurrency: React.FC<SecondProps> = ({ currency, currencyRate, setSeco
   return (
     <div className='secondCurrency'>
       <label>Para</label>
-      <select id="currencySelect" onChange={handleChange} aria-label="Selecione a moeda">
+      <select data-testid="currencyid2" id="currencySelect" onChange={handleChange} aria-label="Selecione a moeda">
         {currency.map((currency, index) => (
           <option key={index} value={currencyRate[index].toString()}>
             {currency}

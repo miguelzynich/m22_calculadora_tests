@@ -13,6 +13,7 @@ export const ConversionContext = createContext<ConversionContextValue | undefine
 
 const ConversionProvider: React.FC<Props> = ({ children }) => {
 	const [value, setValue] = useState(0) 
+	const label = "Resultado da Conversão"
 
 	const changeValue = (newValue: number) => {
 		setValue(newValue)
@@ -21,7 +22,7 @@ const ConversionProvider: React.FC<Props> = ({ children }) => {
 	return <ConversionContext.Provider value={{
 		value,
 		changeValue
-	}}>{children}</ConversionContext.Provider>
+	}}>test {children}</ConversionContext.Provider>
 }
 
 export const useConversion = () => {
