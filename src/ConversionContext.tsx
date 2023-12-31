@@ -22,7 +22,7 @@ const ConversionProvider: React.FC<Props> = ({ children }) => {
 	return <ConversionContext.Provider value={{
 		value,
 		changeValue
-	}}>test {children}</ConversionContext.Provider>
+	}}>{children}</ConversionContext.Provider>
 }
 
 export const useConversion = () => {

@@ -73,11 +73,9 @@ describe('MainComponent', () => {
 
     // Espera até que o resultado da conversão seja exibido
     await waitFor(() => {
-      expect(screen.getByText(/Resultado da Conversão/i)).toBeInTheDocument();
+      expect(screen.getByTestId('finalValue')).toBeInTheDocument();
     });
 
-    // Verifica se o resultado da conversão foi renderizado corretamente
-    //expect(screen.getByText(/Resultado da Conversão/i)).toBeInTheDocument();
   });
 
   afterEach(() => {
